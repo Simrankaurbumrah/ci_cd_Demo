@@ -36,7 +36,7 @@ pipeline {
             steps {
                 echo "Checking out code from branch: ${params.BRANCH_NAME}"
                 git branch: params.BRANCH_NAME,
-                  url: 'https://github.com/Simrankaurbumrah/ci_cd_Demo.git',
+                  url: 'https://github.com/Simrankaurbumrah/ci_cd_Demo.git'
                   // credentialsId: 'your-github-creds'
 
                 // checkout scm
@@ -123,5 +123,7 @@ pipeline {
             cleanWs() // Workspace cleanup
         }
     }
+
 }
+
 
