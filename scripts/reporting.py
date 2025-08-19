@@ -7,4 +7,4 @@ try:
         r.write("Total Records: " + str(len(data)) + "\n")
     print("Report generated: report.txt")
 except FileNotFoundError:
-    print("Report failed. etl_output.txt not found..")
+    print("Report failed. etl_output.txt not found.")
