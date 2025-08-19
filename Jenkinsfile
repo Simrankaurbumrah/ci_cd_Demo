@@ -18,7 +18,7 @@ pipeline {
 
     options {
         timestamps()      // Add timestamps
-        ansiColor('xterm') // Colored logs
+        //ansiColor('xterm') // Colored logs
         buildDiscarder(logRotator(numToKeepStr: '10')) // keep last 10 builds
         timeout(time: 30, unit: 'MINUTES') // Fail after 30 min
     }
